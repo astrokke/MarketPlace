@@ -1,0 +1,162 @@
+/** @format */
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.app-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.basket-container {
+  align-self: flex-end; /* Aligner le panier à droite */
+  margin: 10px; /* Espace autour du panier */
+  border: solid;
+}
+
+.content-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Aligner le contenu au centre horizontalement */
+  position: absolute;
+  top: 5%;
+  left: 30%;
+}
+.list-container {
+  position: absolute;
+  top: 154%;
+  left: 27%;
+  display: contents;
+  font-size: 20px;
+}
+.ul-container {
+  list-style: none;
+}
+.li-container {
+  margin-top: 10%;
+}
+button {
+  font-size: 10px;
+  padding: 0.5em 2em;
+  border: transparent;
+  box-shadow: 2px 2px 4px rgba(0,0,0,0.4);
+  background: dodgerblue;
+  color: white;
+  border-radius: 4px;
+ }
+ 
+ button:hover {
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(30,144,255,1) 0%, rgba(0,212,255,1) 100%);
+ }
+ 
+ button:active {
+  transform: translate(0em, 0.2em);
+ }
+ body {
+  width: 100%;
+  height: 100%;
+  --s: 84px;
+  --c1: #f2f2f2;
+  --c2: #cdcbcc;
+  --c3: #999999;
+
+  --_g: 0 120deg, #0000 0;
+  background: conic-gradient(
+      from 0deg at calc(500% / 6) calc(100% / 3),
+      var(--c3) var(--_g)
+    ),
+    conic-gradient(
+      from -120deg at calc(100% / 6) calc(100% / 3),
+      var(--c2) var(--_g)
+    ),
+    conic-gradient(
+      from 120deg at calc(100% / 3) calc(500% / 6),
+      var(--c1) var(--_g)
+    ),
+    conic-gradient(
+      from 120deg at calc(200% / 3) calc(500% / 6),
+      var(--c1) var(--_g)
+    ),
+    conic-gradient(
+      from -180deg at calc(100% / 3) 50%,
+      var(--c2) 60deg,
+      var(--c1) var(--_g)
+    ),
+    conic-gradient(
+      from 60deg at calc(200% / 3) 50%,
+      var(--c1) 60deg,
+      var(--c3) var(--_g)
+    ),
+    conic-gradient(
+      from -60deg at 50% calc(100% / 3),
+      var(--c1) 120deg,
+      var(--c2) 0 240deg,
+      var(--c3) 0
+    );
+  background-size: calc(var(--s) * 1.732) var(--s);
+}
+h1 {
+  font-size: 70pt;
+  font-family: 'Luckiest Guy';
+  color: #fff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-shadow:   0px -6px 0 #212121,  
+                 0px -6px 0 #212121,
+                 0px  6px 0 #212121,
+                 0px  6px 0 #212121,
+                -6px  0px 0 #212121,  
+                 6px  0px 0 #212121,
+                -6px  0px 0 #212121,
+                 6px  0px 0 #212121,
+                -6px -6px 0 #212121,  
+                 6px -6px 0 #212121,
+                -6px  6px 0 #212121,
+                 6px  6px 0 #212121,
+                -6px  18px 0 #212121,
+                 0px  18px 0 #212121,
+                 6px  18px 0 #212121,
+                 0 19px 1px rgba(0,0,0,.1),
+                 0 0 6px rgba(0,0,0,.1),
+                 0 6px 3px rgba(0,0,0,.3),
+                 0 12px 6px rgba(0,0,0,.2),
+                 0 18px 18px rgba(0,0,0,.25),
+                 0 24px 24px rgba(0,0,0,.2),
+                 0 36px 36px rgba(0,0,0,.15);
+}
